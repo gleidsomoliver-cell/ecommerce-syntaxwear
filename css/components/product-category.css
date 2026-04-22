@@ -1,7 +1,7 @@
 /* Product Category.css */
 .categories-section {
-  padding-top: 40px;
-  padding-bottom: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -16,38 +16,38 @@
     overflow: hidden;
 }
 
-.overlay{
+.overlay {
     position: absolute;
     inset: 0;
     background-color: rgba(0, 0, 0, 0.25);
     z-index: 1;
 }
 
-.category-name{
+.category-name {
     position: absolute;
     left: 50%;
-    top:50%;
+    top: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
     text-align: center;
 }
- 
-.casual{
+
+.casual {
     background: url(../../images/products/casual.jpg) no-repeat center;
     background-size: cover;
 }
 
-.colorido{
+.colorido {
     background: url(../../images/products/colorido.jpg) no-repeat center;
     background-size: cover;
 }
- 
-.esporte{
+
+.esporte {
     background: url(../../images/products/esporte.jpg) no-repeat center;
     background-size: cover;
 }
- 
-.futurista{
+
+.futurista {
     background: url(../../images/products/futurista.jpg) no-repeat center;
     background-size: cover;
 }

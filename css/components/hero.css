@@ -1,9 +1,11 @@
 /* hero.css */
 .hero-section {
     background: url(../../images/banner/hero.jpg) no-repeat center;
-    height: 500px;
     background-size: cover;
+
+    height: 500px;
     position: relative;
+    border-radius: 20px;
 }
 
 .hero-overlay {
@@ -21,7 +23,7 @@
     text-align: center;
 }
 
-.hero-button {
+.hero-buttons {
     display: flex;
     gap: 16px;
 }
