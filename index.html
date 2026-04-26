@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SyntaxWear - Tenis e Sneakers Online</title>
   <meta name="description"
-    content="Compre os melhores tênis e sneakers online na SyntaxWear. Encontre modelos exclusivos, ofertas imperdiveis e frete grátis para todo o brasil." />
+    content="Compre os melhores tênis e sneakers online na SyntaxWear. Encontre modelos exclusivos, ofertas imperdiveis e frete grátis para todo o Brasil." />
 
   <link rel="stylesheet" href="./css/reset.css" />
   <link rel="stylesheet" href="./css/variables.css" />
@@ -29,28 +29,40 @@
       </a>
     </h1>
 
-    <nav class="nav-center" aria-label="Categorias Principais">
-      <ul>
-        <li><a href="#">Masculino</a></li>
-        <li><a href="#">Feminino</a></li>
-        <li><a href="#">Outlet</a></li>
-      </ul>
-    </nav>
+    <input type="checkbox" class="menu-toggle" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">
+      <img src="./images/icons/ícone.svg" alt="menu mobile" srcset="">
+    </label>
+    <nav class="nav-container">
+      <nav class="nav-center" aria-label="Categorias Principais">
+        <ul>
+          <li><a href="#">Masculino</a></li>
+          <li><a href="#">Feminino</a></li>
+          <li><a href="#">Outlet</a></li>
+        </ul>
+      </nav>
 
-    <nav class="nav-right" aria-label="Acesso rápido">
-      <ul>
-        <li><a href="#">Nossas lojas</a></li>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#" aria-label="Minha conta"><img src="./images/icons/user.png" alt="Minha conta" />
-          </a>
-        </li>
-        <li>
-          <a href="#" aria-label="Ajuda"><img src="./images/icons/Vector.png" alt="Ajuda" /></a>
-        </li>
-        <li><a href="#" aria-label="Carrinho"><img src="./images/icons/bag.png" alt="Carrinho" /></a></li>
-      </ul>
-    </nav>
 
+      <nav class="nav-right" aria-label="Acesso rápido">
+        <ul>
+          <li><a href="#">Nossas lojas</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#" aria-label="Minha conta"><img src="./images/icons/user.png" alt="Minha conta" />
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="Ajuda">
+              <img src="./images/icons/Vector.png" alt="Ajuda" />
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="Carrinho">
+              <img src="./images/icons/bag.png" alt="Carrinho" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </nav>
   </header>
 
   <main>
@@ -59,7 +71,7 @@
       <div class="hero-overlay">
         <div class="hero-content">
           <span class="hero-subtitle">Krypton One</span>
-          <h2 class="hero-title">Tranforme qualquer passo em presença.</h2>
+          <h2 class="hero-title">Transforme qualquer passo em presença.</h2>
           <div class="hero-buttons">
             <a class="btn btn-outline" href="#">Ver modelos</a>
             <a class="btn btn-filled" href="#">Comprar</a>
@@ -83,7 +95,7 @@
           <span class="category-name btn btn-outline">esporte</span>
         </a>
       </div>
-      <div class="category-card colorido">
+      <div class="category-card moderno">
         <a href="#" class="category-link">
           <span class="overlay"></span>
           <span class="category-name btn btn-outline">Moderno</span>

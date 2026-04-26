@@ -9,43 +9,66 @@
 
 .highlinght {
     grid-area: highlinght;
-    background-image: url(../../images/products/card_imagem.png);
+    background-image: url("../../images/products/card_imagem.png");
 }
 
 .sneaker-purple {
     grid-area: sneaker-purple;
-  background-image: url(../../images/products/roxo-\ verde-grid.jpg);
+    background-image: url("../../images/products/roxo-verde-grid.jpg");
 }
 
 .model {
     grid-area: model;
-   background-image: url(../../images/products/modelo-femenino.jpg);
+    background-image: url("../../images/products/modelo-femenino.jpg");
 }
 
 .sneaker-color {
     grid-area: sneaker-color;
-  background-image: url(../../images/products/futurista-grid.jpg);
+    background-image: url("../../images/products/futurista-grid.jpg");
 }
 
 .sneaker-white {
     grid-area: sneaker-white;
-background-image: url(../../images/products/preto-azul-grid.jpg);
+    background-image: url("../../images/products/preto-azul-grid.jpg");
 }
 
 .sneaker-silver {
     grid-area: sneaker-silver;
-    background-image: url(../../images/products/moderno-grid.jpg)
+    background: url("../../images/products/moderno-grid.jpg") center/cover no-repeat;
 }
 
 .grid-section {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 300px);
+    grid-template-columns: repeat(4, minmax(220px, 1fr));
+    grid-auto-rows: minmax(260px, auto);
     grid-template-areas:
         "highlinght highlinght sneaker-purple sneaker-purple"
         "highlinght highlinght model sneaker-color"
         "sneaker-white sneaker-white model sneaker-silver";
-    gap: 30px;
+    gap: 18px;
+}
+
+@media (max-width: 1200px) {
+    .grid-section {
+        grid-template-columns: repeat(3, minmax(200px, 1fr));
+        grid-template-areas:
+            "highlinght highlinght sneaker-purple"
+            "highlinght highlinght model"
+            "sneaker-color sneaker-white sneaker-silver";
+    }
+}
+
+@media (max-width: 900px) {
+    .grid-section {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "highlinght"
+            "sneaker-purple"
+            "model"
+            "sneaker-color"
+            "sneaker-white"
+            "sneaker-silver";
+    }
 }
 
 .top1-content{
@@ -74,3 +97,4 @@ background-image: url(../../images/products/preto-azul-grid.jpg);
     display:flex;
     gap: 10px;
 }
+
