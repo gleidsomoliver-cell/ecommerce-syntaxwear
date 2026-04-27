@@ -4,14 +4,15 @@
 	top: 60px;
 	left: 50%;
 	transform: translate(-50%);
-	width: calc(100% - 210px);
+	width: 1260px;
 	border-radius: 15px;
 	z-index: 999;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 0.75rem 1.25rem;
+	padding: 0.265rem 1.25rem;
 	background-color: #ffffff;
+	background: white;
 }
 
 .logo img {
@@ -49,9 +50,11 @@
 
 .nav-container{
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	width: 100%;
 	align-items: center;
+	flex: 1;
+	margin-left: 10rem;
 }
 
 .menu-toggle{
