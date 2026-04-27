@@ -1,5 +1,5 @@
 /* product-grid.css */
-.card{
+.card {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -7,8 +7,8 @@
     border-radius: 20px;
 }
 
-.highlinght {
-    grid-area: highlinght;
+.highlight {
+    grid-area: highlight;
     background-image: url("../../images/products/card_imagem.png");
 }
 
@@ -42,8 +42,8 @@
     grid-template-columns: repeat(4, minmax(220px, 1fr));
     grid-auto-rows: minmax(260px, auto);
     grid-template-areas:
-        "highlinght highlinght sneaker-purple sneaker-purple"
-        "highlinght highlinght model sneaker-color"
+        "highlight highlight sneaker-purple sneaker-purple"
+        "highlight highlight model sneaker-color"
         "sneaker-white sneaker-white model sneaker-silver";
     gap: 18px;
 }
@@ -52,8 +52,8 @@
     .grid-section {
         grid-template-columns: repeat(3, minmax(200px, 1fr));
         grid-template-areas:
-            "highlinght highlinght sneaker-purple"
-            "highlinght highlinght model"
+            "highlight highlight sneaker-purple"
+            "highlight highlight model"
             "sneaker-color sneaker-white sneaker-silver";
     }
 }
@@ -62,7 +62,7 @@
     .grid-section {
         grid-template-columns: 1fr;
         grid-template-areas:
-            "highlinght"
+            "highlight"
             "sneaker-purple"
             "model"
             "sneaker-color"
@@ -71,30 +71,52 @@
     }
 }
 
-.top1-content{
+.top1-content {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-   text-align: center;
+    text-align: center;
 }
 
-.card-title{
+.card-title {
     color: #EDEDED;
     font-size: 1.25rem;
     font-weight: 400;
     margin-bottom: 10px;
 }
 
-.card-subtitle{
-    color:#EDEDED;
+.card-subtitle {
+    color: #EDEDED;
     font-size: 1.5rem;
     font-weight: 400;
     margin-bottom: 20px;
 }
 
-.cta-group{
-    display:flex;
+.cta-group {
+    display: flex;
     gap: 10px;
 }
 
+@media (max-width:768px) {
+    .grid-section {
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: repeat(5, auto);
+        grid-template-areas: "highlight highlight" "sneaker-white sneaker-white" "model sneaker-color" "model sneaker-silver" "sneaker-purple sneaker-purple";
+        max-width: 100%;
+        gap: 0.625rem;
+    }
+
+    .highlight {
+        min-height: 500px;
+    }
+
+    .model {
+        min-height: 370px;
+    }
+
+    .sneaker-white,
+    .sneaker-purple {
+        min-width: 190px;
+    }
+}

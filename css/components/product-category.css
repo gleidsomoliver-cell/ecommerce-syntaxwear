@@ -24,8 +24,14 @@
 }
 
 @media (max-width: 900px) {
+	.category-card {
+		max-width: 100%;
+	}
+}
+
+@media (max-width: 900px) {
 	.categories-section {
-		grid-template-columns: repeat(2, minmax(220px, 1fr));
+		grid-template-columns: 1fr;
 	}
 }
 
@@ -75,4 +81,10 @@
 .futurista {
 	background: url(../../images/products/futurista.jpg) no-repeat center;
 	background-size: cover;
+}
+
+@media (max-width:500px) {
+	.category-card{
+		width: 100%;
+	}
 }
